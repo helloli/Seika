@@ -1,2 +1,2 @@
 # Seika
-Seika's new world
+Seika's new world.
