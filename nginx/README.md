@@ -17,9 +17,20 @@
 
 ## nginx 的配置
 
+如果是通过 `homebrew` 安装的 `nginx` 则可以通过 `brew info nginx` 查看安装信息。其中部分重要信息如下：
+
+```
+Docroot is: /usr/local/var/www
+
+The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that
+nginx can run without sudo.
+
+nginx will load all files in /usr/local/etc/nginx/servers/.
+```
+
 ### 配置文件
 
-nginx 的配置文件在安装目录中，`/usr/local/etc/nginx/nginx.conf`。有一些知识点
+nginx 的配置文件在安装目录中，`/usr/local/etc/nginx/nginx.conf`，所有 `/usr/local/etc/nginx/servers/` 中的配置文件也都会被加载。而默认的文件目录为 `/usr/local/var/www`
 
 #### 配置文件的结构
 
